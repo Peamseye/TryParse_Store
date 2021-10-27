@@ -1,0 +1,16 @@
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\bin\Debug\net5.0\TryParse_Store.exe
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\bin\Debug\net5.0\TryParse_Store.deps.json
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\bin\Debug\net5.0\TryParse_Store.runtimeconfig.json
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\bin\Debug\net5.0\TryParse_Store.runtimeconfig.dev.json
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\bin\Debug\net5.0\TryParse_Store.dll
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\bin\Debug\net5.0\ref\TryParse_Store.dll
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\bin\Debug\net5.0\TryParse_Store.pdb
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\obj\Debug\net5.0\TryParse_Store.csproj.AssemblyReference.cache
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\obj\Debug\net5.0\TryParse_Store.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\obj\Debug\net5.0\TryParse_Store.AssemblyInfoInputs.cache
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\obj\Debug\net5.0\TryParse_Store.AssemblyInfo.cs
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\obj\Debug\net5.0\TryParse_Store.csproj.CoreCompileInputs.cache
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\obj\Debug\net5.0\TryParse_Store.dll
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\obj\Debug\net5.0\ref\TryParse_Store.dll
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\obj\Debug\net5.0\TryParse_Store.pdb
+C:\Users\aslund.alexander\OneDrive\Dokument\TE20B Spel - Webb\Programmering 1\Projekt\TryParse_Store\TryParse_Store\obj\Debug\net5.0\TryParse_Store.genruntimeconfig.cache
