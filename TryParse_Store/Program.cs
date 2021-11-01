@@ -51,7 +51,7 @@ while (game == true)
     ToolBox.WriteCentered("");
     ToolBox.WriteCentered("a = Apple (5$)     b = Orange (10$)     c = Melon (15$)");
     
-    Console.ReadLine();
+    fruit = Console.ReadLine();
     }
 
 
@@ -142,7 +142,7 @@ while (game == true)
         Console.WriteLine("");
         ToolBox.WriteCentered("a = yes                 b = no");
 
-        Console.ReadLine();
+        answer = Console.ReadLine();
     }
 
     if (answer == "a")
