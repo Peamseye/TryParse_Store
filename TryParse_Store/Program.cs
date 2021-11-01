@@ -3,6 +3,8 @@
 
 
 ToolBox.WriteCentered("Tryparse Store");
+ToolBox.WriteCentered("");
+ToolBox.WriteCentered("");
 
 //-------------------------
 
@@ -10,14 +12,9 @@ int currency = 100;
 //Beräknar valutan genom loopen.
 int amount = 0;
 
-int fruit1 = 5;
-// fruit1 = apple
+int price = 0;
+// 
 
-int fruit2 = 10;
-// fruit2 = orange
-
-int fruit3 = 15;
-// fruit3 = melon
 //Int-satser som uppdateras efter varje återställning av loopen
 
 ToolBox.WriteCentered("Hello! Feel free to purchase some of my exotic Fruits!");
@@ -28,6 +25,7 @@ ToolBox.WriteCentered("I have three different fruits you can choose from, so mak
 
 //-------------------------
 bool game = true;
+//Programmets loop. Tillåter användaren att starta om loopen för att köpa fler produkter
 while (game == true)
 {
     Console.WriteLine("");
@@ -39,22 +37,40 @@ while (game == true)
     ToolBox.WriteCentered("");
     ToolBox.WriteCentered("a = Apple (5$)     b = Orange (10$)     c = Melon (15$)");
 
-    string fruit = Console.ReadLine(); 
-    fruit = fruit.ToLower();
     
+    string fruit = Console.ReadLine();
+    fruit = fruit.ToLower();
+
+    while (fruit != "a" && fruit != "b" && fruit != "c")
+    {
+    Console.Clear();
+    
+    ToolBox.WriteCentered($"You have {currency}$ left.");
+    ToolBox.WriteCentered("");
+    ToolBox.WriteCentered("What fruit do you want to purchase?");
+    ToolBox.WriteCentered("");
+    ToolBox.WriteCentered("a = Apple (5$)     b = Orange (10$)     c = Melon (15$)");
+    
+    Console.ReadLine();
+    }
+
+
     if (fruit == "a")
     {
-  currency = currency - amount * fruit1;
+        price = 5;
+        Console.WriteLine($"{currency}");
     }
 
     if (fruit == "b")
     {
-  currency = currency - amount * fruit2;
+        price = 10;
+        Console.WriteLine($"{currency}");
     }
 
     if (fruit == "c")
     {
-  currency = currency - amount * fruit3;
+        price = 15;
+        Console.WriteLine($"{currency}");
     }
 
     ToolBox.WriteCentered("How many do you want to purchase?");
@@ -82,7 +98,8 @@ while (game == true)
 
 
 
-    
+    currency = currency - amount * price;
+    //Beräknar hur mycket som ska tas bort från användarens totala summa pengar
 
     if (currency < 0)
     {
@@ -94,7 +111,8 @@ while (game == true)
     {
         ToolBox.WriteCentered($"- Purchased {amount} Fruit");
         ToolBox.WriteCentered($"You have {currency}$ left");
-
+        
+        
         Console.WriteLine("");
         Console.WriteLine("");
         Console.WriteLine("");
@@ -139,7 +157,7 @@ while (game == true)
         ToolBox.WriteCentered("Press [ENTER] To Exit the Store");
         game = false;
     }
-
+//Bestämmer om användaren vill återställa loopen och köpa fler frukter, eller om loopen ska avslutas och programmet stängs ner.
 
 }
 
