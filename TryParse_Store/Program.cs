@@ -16,7 +16,6 @@ int amount = 0;
 int price = 0;
 // 
 
-
 //Introduktion
 ToolBox.WriteCentered("Hello! Feel free to purchase some of my exotic Fruits!");
 Console.WriteLine("");
