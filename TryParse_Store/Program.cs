@@ -2,16 +2,29 @@
 
 
 
-ToolBox.WriteCentered("Store");
+ToolBox.WriteCentered("Tryparse Store");
 
 //-------------------------
 
 int currency = 100;
+//Beräknar valutan genom loopen.
 int amount = 0;
 
-ToolBox.WriteCentered($"You have {currency}$, Feel free to purchase some of my exotic Fruits!");
+int fruit1 = 5;
+// fruit1 = apple
+
+int fruit2 = 10;
+// fruit2 = orange
+
+int fruit3 = 15;
+// fruit3 = melon
+//Int-satser som uppdateras efter varje återställning av loopen
+
+ToolBox.WriteCentered("Hello! Feel free to purchase some of my exotic Fruits!");
 Console.WriteLine("");
-ToolBox.WriteCentered("Every fruit costs 10$, so make sure you have enough money.");
+ToolBox.WriteCentered("I have three different fruits you can choose from, so make sure you have enough money.");
+//Introduktion
+
 
 //-------------------------
 bool game = true;
@@ -19,6 +32,31 @@ while (game == true)
 {
     Console.WriteLine("");
     Console.WriteLine("");
+
+    ToolBox.WriteCentered($"You have {currency}$ left.");
+    ToolBox.WriteCentered("");
+    ToolBox.WriteCentered("What fruit do you want to purchase?");
+    ToolBox.WriteCentered("");
+    ToolBox.WriteCentered("a = Apple (5$)     b = Orange (10$)     c = Melon (15$)");
+
+    string fruit = Console.ReadLine(); 
+    fruit = fruit.ToLower();
+    
+    if (fruit == "a")
+    {
+  currency = currency - amount * fruit1;
+    }
+
+    if (fruit == "b")
+    {
+  currency = currency - amount * fruit2;
+    }
+
+    if (fruit == "c")
+    {
+  currency = currency - amount * fruit3;
+    }
+
     ToolBox.WriteCentered("How many do you want to purchase?");
 
     string input = Console.ReadLine();
@@ -40,7 +78,12 @@ while (game == true)
     }
 
 
-    currency = currency - amount * 10;
+
+
+
+
+    
+
     if (currency < 0)
     {
         ToolBox.WriteCentered("Sorry, you cannot afford to buy this.");
@@ -69,8 +112,9 @@ while (game == true)
     string answer = Console.ReadLine();
     answer = answer.ToLower();
 
-    while (answer != "a" && answer != "b")
+    while (answer != "a" && answer != "b" && game == true)
     {
+
         Console.Clear();
 
         Console.WriteLine("");
