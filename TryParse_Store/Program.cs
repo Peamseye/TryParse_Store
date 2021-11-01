@@ -8,24 +8,25 @@ ToolBox.WriteCentered("");
 
 //-------------------------
 
+//Int-satser som uppdateras efter varje återställning av loopen
 int currency = 100;
-//Beräknar valutan genom loopen.
+
 int amount = 0;
 
 int price = 0;
 // 
 
-//Int-satser som uppdateras efter varje återställning av loopen
 
+//Introduktion
 ToolBox.WriteCentered("Hello! Feel free to purchase some of my exotic Fruits!");
 Console.WriteLine("");
 ToolBox.WriteCentered("I have three different fruits you can choose from, so make sure you have enough money.");
-//Introduktion
 
 
 //-------------------------
-bool game = true;
 //Programmets loop. Tillåter användaren att starta om loopen för att köpa fler produkter
+bool game = true;
+
 while (game == true)
 {
     Console.WriteLine("");
@@ -95,17 +96,23 @@ while (game == true)
 
 
 
+//Beräknar hur mycket som ska tas bort från användarens totala summa pengar
+if (currency < amount * price)
+    {
+        ToolBox.WriteCentered("Sorry, you cannot afford to buy this.");
+        amount = 0;
+    }
+else {
 
+     currency = currency - amount * price;
+     }
+    
 
-
-    currency = currency - amount * price;
-    //Beräknar hur mycket som ska tas bort från användarens totala summa pengar
+    
 
     if (currency < 0)
     {
         ToolBox.WriteCentered("Sorry, you cannot afford to buy this.");
-        ToolBox.WriteCentered("Press [ENTER] to put back your product and leave the store");
-        game = false;
     }
     else
     {
@@ -145,6 +152,7 @@ while (game == true)
         answer = Console.ReadLine();
     }
 
+//Bestämmer om användaren vill återställa loopen och köpa fler frukter, eller om loopen ska avslutas och programmet stängs ner.
     if (answer == "a")
     {
         Console.Clear();
@@ -153,11 +161,10 @@ while (game == true)
 
     if (answer == "b")
     {
-        ToolBox.WriteCentered($"You leave the store with the remaining {currency}$");
-        ToolBox.WriteCentered("Press [ENTER] To Exit the Store");
+        ToolBox.WriteCentered("You leave the store.");
+        ToolBox.WriteCentered("Press [ENTER] To Exit.");
         game = false;
     }
-//Bestämmer om användaren vill återställa loopen och köpa fler frukter, eller om loopen ska avslutas och programmet stängs ner.
 
 }
 
