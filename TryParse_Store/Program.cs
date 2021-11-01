@@ -45,34 +45,34 @@ while (game == true)
     //Tvingar användaren att välja mellan a, b eller c.
     while (fruit != "a" && fruit != "b" && fruit != "c")
     {
-    Console.Clear();
-    
-    ToolBox.WriteCentered($"You have {currency}$ left.");
-    ToolBox.WriteCentered("");
-    ToolBox.WriteCentered("What fruit do you want to purchase?");
-    ToolBox.WriteCentered("");
-    ToolBox.WriteCentered("a = Apple (5$)     b = Orange (10$)     c = Melon (15$)");
-    
-    fruit = Console.ReadLine();
+        Console.Clear();
+
+        ToolBox.WriteCentered($"You have {currency}$ left.");
+        ToolBox.WriteCentered("");
+        ToolBox.WriteCentered("What fruit do you want to purchase?");
+        ToolBox.WriteCentered("");
+        ToolBox.WriteCentered("a = Apple (5$)     b = Orange (10$)     c = Melon (15$)");
+
+        fruit = Console.ReadLine();
     }
 
     //Bestämmer värdet på varje frukt beroende på svaret av "fruit"
     if (fruit == "a")
     {
         price = 5;
-        
+
     }
 
     if (fruit == "b")
     {
         price = 10;
-        
+
     }
 
     if (fruit == "c")
     {
         price = 15;
-        
+
     }
 
 
@@ -105,13 +105,14 @@ while (game == true)
         ToolBox.WriteCentered("Sorry, you cannot afford to buy this.");
         amount = 0;
     }
-    else {
+    else
+    {
 
-     currency = currency - amount * price;
-     }
-    
+        currency = currency - amount * price;
+    }
 
-    
+
+
     //Kollar om användaren har några pengar kvar. Om den har pengar, säger programmet till användaren mängden frukt, samt den totala summan som återstår.
     if (currency < 0)
     {
@@ -121,8 +122,8 @@ while (game == true)
     {
         ToolBox.WriteCentered($"- Purchased {amount} Fruit");
         ToolBox.WriteCentered($"You have {currency}$ left");
-        
-        
+
+
         Console.WriteLine("");
         Console.WriteLine("");
         Console.WriteLine("");
@@ -136,10 +137,10 @@ while (game == true)
 
 
 
-    
+
     string answer = Console.ReadLine();
     answer = answer.ToLower();
-    
+
     //Startar en loop som fortsätter så länge användaren inte skriver in a eller b. Loopen fortsätter så länge programmets loop är aktiv, och stannar om användaren väljer att avsluta programmet.
     while (answer != "a" && answer != "b" && game == true)
     {
@@ -156,7 +157,7 @@ while (game == true)
         answer = Console.ReadLine();
     }
 
-//Bestämmer om användaren vill återställa loopen och köpa fler frukter, eller om loopen ska avslutas och programmet ska stängas.
+    //Bestämmer om användaren vill återställa loopen och köpa fler frukter, eller om loopen ska avslutas och programmet ska stängas.
     if (answer == "a")
     {
         Console.Clear();
